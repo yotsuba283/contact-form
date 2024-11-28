@@ -9,19 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inika&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/common.css')}}">
     <link rel="stylesheet" href="{{ asset('css/confirm.css') }}" />
 </head>
 <body>
     <header class="header">
-        FashionablyLate
+        <h1>FashionablyLate</h1>
     </header>
 
     <main>
         <div>
             <div>
-                <h1>Confirm</h1>
+                <h2>Confirm</h2>
             </div>
-            <form class="form" action="/contacts" method="post">
+            <form class="form" action="/thanks" method="post">
                 @csrf
                 <div class="confirm-table">
                     <table class="confirm-table__inner">

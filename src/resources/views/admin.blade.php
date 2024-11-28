@@ -9,9 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inika&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/common.css')}}">
     <link rel="stylesheet" href="{{ asset('css/admin.css') }}" />
 </head>
 <body>
+    <header class="header">
+        <h1>FashionablyLate</h1>
+    </header>
+
+    <form action="/logout" method="post">
+        @csrf
+        <input class="header__link" type="submit" value="logout">
+    </form>
+
 
 </body>
 </html>
