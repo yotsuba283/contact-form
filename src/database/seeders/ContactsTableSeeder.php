@@ -16,4 +16,8 @@ class ContactsTableSeeder extends Seeder
     {
         Contact::factory()->count(35)->create();
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main

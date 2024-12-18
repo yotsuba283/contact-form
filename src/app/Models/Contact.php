@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+<<<<<<< HEAD
 
 class Contact extends Model
 {
@@ -18,4 +19,12 @@ class Contact extends Model
     {
         return $this->belongsTo(Category::class);
     }
+=======
+class Contact extends Model
+{
+    use HasFactory;
+    protected $fillable = [
+        'first_name', 'last_name', 'gender', 'email', 'tell', 'address', 'building', 'content', 'detail'
+    ];
+>>>>>>> origin/main
 }

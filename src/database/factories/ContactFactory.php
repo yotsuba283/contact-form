@@ -23,4 +23,8 @@ class ContactFactory extends Factory
             'detail' => $this->faker->text(120),
         ];
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main

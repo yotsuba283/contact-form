@@ -2,17 +2,23 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use App\Http\Requests\ContactRequest;
 use App\Models\Category;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Date;
 use Symfony\Component\HttpFoundation\StreamedResponse;
+=======
+use Illuminate\Http\Request;
+use App\Models\Contact;
+>>>>>>> origin/main
 
 class ContactController extends Controller
 {
     public function index()
     {
+<<<<<<< HEAD
         $categories = Category::all();
         return view('contact', compact('categories'));
     }
@@ -135,4 +141,21 @@ class ContactController extends Controller
 
         return $query;
     }
+=======
+    return view('index');
+    }
+
+    public function confirm(Request $request)
+    {
+        $contact = $request->only(['first_name', 'last_name', 'gender', 'email', 'tell', 'address', 'building', 'content', 'detail']);
+        return view('confirm', compact('contact'));
+    }
+
+    public function store(Request $request)
+    {
+        $contact = $request->only(['first_name', 'last_name', 'gender', 'email', 'tell', 'address', 'building','content' , 'detail']);
+        Contact::create($contact);
+        return view('thanks');
+    }
+>>>>>>> origin/main
 }

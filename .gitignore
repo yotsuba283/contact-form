@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /src/node_modules
 /src/public/hot
 /src/public/storage
@@ -14,3 +15,7 @@
 /src/.idea
 /src/.vscode
 /docker/mysql/data
+=======
+docker/mysql/data/*
+!.gitkeep
+>>>>>>> origin/main
